@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProGest - Sistema de Gestão Empresarial Completo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/administrative-tools.png">
+	<style>
+    /* Animação de entrada para elementos */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-on-scroll {
+        opacity: 0;
+        animation: fadeInUp 0.6s ease forwards;
+    }
+    
+    /* Gradiente verde personalizado */
+    .gradient-text {
+        background: linear-gradient(135deg, #2e7d32, #4caf50);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+</style>
+
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">ProGest</span>
+                        <span class="logo-sub">Sistema de Gestão</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#funcionalidades" class="nav-link">Funcionalidades</a></li>
+                    <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                    <li><a href="#planos" class="nav-link">Planos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#demo" class="btn btn-outline">Solicitar Demonstração</a>
+                    <a href="#contato" class="btn btn-primary">Experimente Grátis</a>
+                </div>
+                
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Simplifique sua Gestão com o Sistema Mais Completo do Mercado
+                    </h1>
+                    <p class="hero-subtitle">
+                        O ProGest é uma solução integrada que automatiza processos, aumenta a produtividade e otimiza os resultados da sua empresa.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#planos" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket"></i> Começar Agora
+                        </a>
+                        <a href="#demo" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-play-circle"></i> Ver Demonstração
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">+500</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+15</span>
+                            <span class="stat-label">Anos no Mercado</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Disponibilidade</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="dashboard-preview">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Dashboard do Sistema ProGest">
+                        <div class="preview-badge">
+                            <i class="fas fa-crown"></i>
+                            <span>Sistema #1 em Gestão Empresarial</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Funcionalidades -->
+    <section id="funcionalidades" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Funcionalidades <span class="highlight">Completas</span></h2>
+                <p class="section-subtitle">Tudo o que sua empresa precisa em um único sistema integrado</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="feature-title">Gestão Financeira</h3>
+                    <p class="feature-description">
+                        Controle completo de contas a pagar e receber, fluxo de caixa, conciliação bancária e relatórios financeiros detalhados.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Emissão de boletos</li>
+                        <li><i class="fas fa-check"></i> DRE automatizado</li>
+                        <li><i class="fas fa-check"></i> Previsão de caixa</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3 class="feature-title">Controle de Estoque</h3>
+                    <p class="feature-description">
+                        Gerencie seu inventário com precisão, controle de entrada e saída, inventário rotativo e alertas de reposição.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Controle de lotes e validade</li>
+                        <li><i class="fas fa-check"></i> Inventário em tempo real</li>
+                        <li><i class="fas fa-check"></i> Múltiplos armazéns</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Gestão de Pessoas</h3>
+                    <p class="feature-description">
+                        Sistema completo de RH com controle de ponto, folha de pagamento, benefícios, recrutamento e treinamentos.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Ponto eletrônico integrado</li>
+                        <li><i class="fas fa-check"></i> Folha de pagamento</li>
+                        <li><i class="fas fa-check"></i> Avaliação de desempenho</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="feature-title">Business Intelligence</h3>
+                    <p class="feature-description">
+                        Dashboards interativos com indicadores de performance, relatórios personalizados e análise preditiva.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> KPIs em tempo real</li>
+                        <li><i class="fas fa-check"></i> Gráficos interativos</li>
+                        <li><i class="fas fa-check"></i> Exportação para Excel</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="feature-title">Vendas e CRM</h3>
+                    <p class="feature-description">
+                        Pipeline de vendas, histórico de clientes, automatização de follow-up e gestão de oportunidades.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Pedidos de venda</li>
+                        <li><i class="fas fa-check"></i> Orçamentos</li>
+                        <li><i class="fas fa-check"></i> Fidelização de clientes</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Aplicativo Móvel</h3>
+                    <p class="feature-description">
+                        Acesso completo pelo celular, aprovações em um clique, dashboard móvel e notificações push.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Disponível para iOS e Android</li>
+                        <li><i class="fas fa-check"></i> Offline mode</li>
+                        <li><i class="fas fa-check"></i> Biometria e segurança</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="features-cta">
+                <a href="#demo" class="btn btn-primary btn-lg">
+                    <i class="fas fa-play-circle"></i> Ver Todas as Funcionalidades
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Benefícios -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por que escolher o <span class="highlight">ProGest</span>?</h2>
+                <p class="section-subtitle">Os benefícios que transformarão a gestão da sua empresa</p>
+            </div>
+            
+            <div class="benefits-content">
+                <div class="benefits-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Equipe usando o ProGest">
+                </div>
+                
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Aumente sua Produtividade</h3>
+                            <p>Automatize processos manuais e reduza o tempo gasto com tarefas operacionais em até 70%.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Segurança de Dados</h3>
+                            <p>Backup automático, criptografia de ponta a ponta e conformidade com a LGPD.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Integração Total</h3>
+                            <p>Todos os módulos conversam entre si, eliminando retrabalho e inconsistências de dados.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Suporte Especializado</h3>
+                            <p>Equipe técnica disponível 24/7 para tirar dúvidas e resolver problemas rapidamente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Escalabilidade Garantida</h3>
+                            <p>Cresça sem preocupações: o sistema acompanha o desenvolvimento da sua empresa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Treinamento Completo</h3>
+                            <p>Capacitação da equipe, manuais e tutoriais para garantir a melhor utilização do sistema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Planos -->
+    <section id="planos" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planos que <span class="highlight">Caberão no seu Orçamento</span></h2>
+                <p class="section-subtitle">Escolha o plano ideal para o tamanho e necessidade da sua empresa</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Básico</h3>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">199</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="pricing-description">Para pequenas empresas</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Até 5 usuários</li>
+                            <li><i class="fas fa-check"></i> Gestão Financeira</li>
+                            <li><i class="fas fa-check"></i> Controle de Estoque Básico</li>
+                            <li><i class="fas fa-check"></i> Emissão de NF-e</li>
+                            <li><i class="fas fa-check"></i> Suporte por e-mail</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Gestão de Pessoas</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Business Intelligence</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-footer">
+                        <a href="#contato" class="btn btn-outline btn-block">Escolher Plano</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Profissional</h3>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">499</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="pricing-description">Para empresas em crescimento</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Até 20 usuários</li>
+                            <li><i class="fas fa-check"></i> Todas as funcionalidades Básico</li>
+                            <li><i class="fas fa-check"></i> Gestão de Pessoas Completa</li>
+                            <li><i class="fas fa-check"></i> Vendas e CRM</li>
+                            <li><i class="fas fa-check"></i> Business Intelligence Básico</li>
+                            <li><i class="fas fa-check"></i> Suporte por chat e telefone</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Aplicativo Móvel</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-footer">
+                        <a href="#contato" class="btn btn-primary btn-block">Escolher Plano</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">899</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="pricing-description">Para grandes empresas</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Usuários ilimitados</li>
+                            <li><i class="fas fa-check"></i> Todas as funcionalidades Profissional</li>
+                            <li><i class="fas fa-check"></i> Aplicativo Móvel Completo</li>
+                            <li><i class="fas fa-check"></i> BI Avançado com IA</li>
+                            <li><i class="fas fa-check"></i> Integrações personalizadas</li>
+                            <li><i class="fas fa-check"></i> Suporte 24/7 prioritário</li>
+                            <li><i class="fas fa-check"></i> Consultoria especializada</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-footer">
+                        <a href="#contato" class="btn btn-outline btn-block">Escolher Plano</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> Todos os planos incluem 30 dias gratuitos para teste. Não requer cartão de crédito.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Demonstração -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2 class="demo-title">Veja o ProGest em Ação</h2>
+                    <p class="demo-subtitle">Agende uma demonstração personalizada e descubra como o ProGest pode transformar a gestão da sua empresa.</p>
+                    <ul class="demo-features">
+                        <li><i class="fas fa-check-circle"></i> Apresentação ao vivo do sistema</li>
+                        <li><i class="fas fa-check-circle"></i> Resposta às suas dúvidas específicas</li>
+                        <li><i class="fas fa-check-circle"></i> Análise gratuita do seu processo atual</li>
+                        <li><i class="fas fa-check-circle"></i> Proposta personalizada para sua empresa</li>
+                    </ul>
+                </div>
+                
+                <div class="demo-form">
+                    <div class="form-container">
+                        <h3 class="form-title">Solicitar Demonstração</h3>
+                        <form id="demoForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nome completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="E-mail corporativo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Nome da empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Número de funcionários</option>
+                                    <option value="1-10">1-10 funcionários</option>
+                                    <option value="11-50">11-50 funcionários</option>
+                                    <option value="51-200">51-200 funcionários</option>
+                                    <option value="200+">Mais de 200 funcionários</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Descreva brevemente suas necessidades" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fas fa-calendar-check"></i> Agendar Demonstração
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que nossos <span class="highlight">clientes dizem</span></h2>
+                <p class="section-subtitle">Empresas que transformaram sua gestão com o ProGest</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Implementamos o ProGest há 2 anos e nossa produtividade aumentou 40%. O suporte é excepcional!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Mendes</h4>
+                            <p>CEO, Indústria Metalúrgica</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"A integração entre os módulos eliminou retrabalho e erros. Finalmente temos informações confiáveis em tempo real."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Silva</h4>
+                            <p>Diretora Financeira, Rede de Farmácias</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"O aplicativo móvel nos permite aprovar despesas e visualizar relatórios de qualquer lugar. Revolucionou nossa gestão."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Roberto Almeida</h4>
+                            <p>Gerente Geral, Distribuidora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pronto para <span class="highlight">transformar sua gestão</span>?</h2>
+                <p class="section-subtitle">Entre em contato conosco e descubra como o ProGest pode ajudar sua empresa</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefone</h3>
+                            <p>(65) 99999-9999</p>
+                            <p>(65) 88888-8888</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>E-mail</h3>
+                            <p>comercial@progest.com.br</p>
+                            <p>suporte@progest.com.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Endereço</h3>
+                            <p>Av. Historiador Rubens de Mendonça, 3000</p>
+                            <p>Jardim Presidente, Cuiabá - MT</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta: 8h às 18h</p>
+                            <p>Sábado: 8h às 12h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h3>Experimente Grátis por 30 Dias</h3>
+                    <p>Preencha o formulário e nossa equipe entrará em contato para configurar sua conta de teste.</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nome" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="E-mail" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" placeholder="Telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Empresa" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Selecione seu setor</option>
+                                <option value="industria">Indústria</option>
+                                <option value="comercio">Comércio</option>
+                                <option value="servicos">Serviços</option>
+                                <option value="varejo">Varejo</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Mensagem (opcional)" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Solicitar Teste Gratuito
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">ProGest</span>
+                            <span class="logo-sub">Sistema de Gestão</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Sistema de gestão empresarial completo que simplifica processos, aumenta a produtividade e impulsiona resultados.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Produto</h3>
+                    <ul class="footer-links">
+                        <li><a href="#funcionalidades">Funcionalidades</a></li>
+                        <li><a href="#planos">Planos e Preços</a></li>
+                        <li><a href="#demo">Demonstração</a></li>
+                        <li><a href="#contato">Teste Grátis</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Suporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Tutoriais</a></li>
+                        <li><a href="#">Status do Sistema</a></li>
+                        <li><a href="#">LGPD e Segurança</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ProGest - Sistema de Gestão Empresarial. Todos os direitos reservados.</p>
+                <p>Desenvolvido para atividade de Projeto e Desenvolvimento com GitHub - Secitec MT</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
